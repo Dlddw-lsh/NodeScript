@@ -1,4 +1,6 @@
 # !/bin/bash
+# 修改当前目录的权限
+chmod 777 $(pwd)
 sudo -u postgres psql -c "drop table brc20_block_hashes;"
 sudo -u postgres psql -c "drop table brc20_cumulative_event_hashes;"
 sudo -u postgres psql -c "drop table brc20_current_balances;"
